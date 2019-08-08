@@ -1,0 +1,258 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.san.app.merchant.fragment.SalesReportFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            android:elevation="5dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp"
+            app:titleTextColor="@android:color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="left"
+                android:text="@string/title_Report"
+                android:textAppearance="@style/TextAppearance"
+                android:textColor="@color/app_theme_dark"
+                android:textSize="@dimen/toolbar_text_size"
+                android:textStyle="bold" />
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/lnMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lnFilter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="5"
+                        android:text="From"
+                        android:textAppearance="@style/TextAppearance"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/x_small_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="5"
+                        android:text="To"
+                        android:textAppearance="@style/TextAppearance"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/x_small_text_size"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tvClearSearch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Clear Search"
+                            android:textAppearance="@style/TextAppearance"
+                            android:textColor="@color/colorPrimaryLight"
+                            android:textSize="@dimen/x_small_text_size"
+                            android:textStyle="normal"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="5"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edtFromDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:clickable="true"
+                            android:focusableInTouchMode="false"
+                            android:gravity="start"
+                            android:imeOptions="actionNext"
+                            android:inputType="date"
+                            android:longClickable="false"
+                            android:textAppearance="@style/TextAppearance"
+                            android:textColor="@color/dark_gray"
+                            android:textColorHint="@color/black"
+                            android:textSize="@dimen/small_text_size"
+                            android:textStyle="normal" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/edt_botton_line" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="5"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edtToDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:clickable="true"
+                            android:focusableInTouchMode="false"
+                            android:gravity="start"
+                            android:imeOptions="actionNext"
+                            android:inputType="date"
+                            android:longClickable="false"
+                            android:textAppearance="@style/TextAppearance"
+                            android:textColor="@color/dark_gray"
+                            android:textColorHint="@color/black"
+                            android:textSize="@dimen/small_text_size"
+                            android:textStyle="normal" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/edt_botton_line" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnSearch"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/button_bg"
+                        android:text="Search"
+                        android:singleLine="true"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/large_text_size1"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="9">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvReportList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:nestedScrollingEnabled="false"
+                    android:scrollbars="vertical" />
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|bottom"
+                android:elevation="5dp"
+                android:padding="5dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/lnNoData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:text="@string/empty_RoprtMessage"
+                    android:textAppearance="@style/TextAppearance"
+                    android:textSize="@dimen/large_text_size1" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llTotal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:background="@color/app_theme_dark">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Total Earning"
+                    android:textAppearance="@style/TextAppearance"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/med_text_size"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvTotalEarn"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center|end"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/med_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

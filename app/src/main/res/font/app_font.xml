@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- medium -->
+    <font
+        android:font="@font/airbnbcereal_medium"
+        android:fontStyle="normal"
+        android:fontWeight="500"
+
+        app:font="@font/airbnbcereal_medium"
+        app:fontStyle="normal"
+        app:fontWeight="500" />
+
+    <!-- Book -->
+    <font
+        android:font="@font/airbnbcereal_book"
+        android:fontStyle="normal"
+        android:fontWeight="400"
+
+        app:font="@font/airbnbcereal_book"
+        app:fontStyle="normal"
+        app:fontWeight="400" />
+
+    <!-- Light -->
+    <font
+        android:font="@font/airbnbcereal_light"
+        android:fontStyle="normal"
+        android:fontWeight="300"
+
+        app:font="@font/airbnbcereal_light"
+        app:fontStyle="normal"
+        app:fontWeight="300" />
+
+    <!-- bold -->
+    <font
+        android:font="@font/airbnbcereal_bold"
+        android:fontStyle="normal"
+        android:fontWeight="700"
+
+        app:font="@font/airbnbcereal_bold"
+        app:fontStyle="normal"
+        app:fontWeight="700" />
+
+</font-family>

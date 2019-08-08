@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:background="@drawable/gray_corner"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tvNote"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:maxLines="2"
+            android:textAppearance="@style/TextAppearance"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/x_small_text_size" />
+
+    </LinearLayout>
+
+</LinearLayout>

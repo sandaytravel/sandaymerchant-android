@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "772435681222",
+    "firebase_url": "https://san-merchant.firebaseio.com",
+    "project_id": "san-merchant",
+    "storage_bucket": "san-merchant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772435681222:android:1e3c3e153d368209",
+        "android_client_info": {
+          "package_name": "com.san.app.merchant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "772435681222-grkiaso7frpfefmfo8cses4piha74vvk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.san.app.merchant",
+            "certificate_hash": "c7a12a5627002078eb0ca5b7d90a997a7094be20"
+          }
+        },
+        {
+          "client_id": "772435681222-3j64r9sv0nkajc4ojpj1lp009unsge8h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTKpWVEdB0OZn2gEitl93sTYeEjGTzZ50"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "772435681222-3j64r9sv0nkajc4ojpj1lp009unsge8h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Sanday Merchant</string>
+    <string name="NO_INTERNET_CONNECTION">No Internet Connection</string>
+    <string name="hello_n_welcome_to_san">Hello, \nWelcome to SAN.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="error">Error</string>
+    <string name="please_provide_email">Please provide email address!</string>
+    <string name="please_provide_title">Please provide note title!</string>
+    <string name="please_provide_voucher">Please provide Voucher code!</string>
+    <string name="please_provide_desc">Please provide note description!</string>
+    <string name="please_provide_note">Please provide note!</string>
+    <string name="please_provide_valid_email">Please provide valid email</string>
+    <string name="please_provide_password">Please provide password!</string>
+
+    <string name="please_provide_old_pwd">Please provide old password.</string>
+    <string name="please_provide_new_pwd">Please provide new password.</string>
+    <string name="please_provide_confirm_new_pwd">Please provide confirm password.</string>
+    <string name="both_pwd_doest_not_match">Both password does not match!</string>
+
+    <string name="please_provide_name">Please provide name.</string>
+    <string name="please_provide_company_name">Please provide company name.</string>
+    <string name="please_provide_website_url">Please provide website URL.</string>
+    <string name="please_provide_valid_website">Please provide valid website.</string>
+    <string name="please_provide_company_sst">Please provide company SST certificate.</string>
+    <string name="please_provide_country_name">Please provide country name.</string>
+    <string name="please_provide_city_name">Please provide city name.</string>
+    <string name="please_provide_country_code">Please provide country code.</string>
+    <string name="please_provide_phone_number">Please provide phone number.</string>
+    <string name="please_provide_valid_phone_number">Please provide valid phone number.</string>
+
+    <string name="Title_changePassword">Change Password</string>
+    <string name="title_forgotPassword">Forgot Password</string>
+    <string name="title_Login">Login</string>
+    <string name="title_Reviews">Reviews</string>
+    <string name="title_ManageBookings">Manage Bookings</string>
+    <string name="title_Details">Details</string>
+    <string name="title_MyProfile">My Profile</string>
+    <string name="title_MyActivity">My Activity</string>
+    <string name="title_Notifications">Notifications</string>
+    <string name="title_Report">Report</string>
+    <string name="title_Settings">Settings</string>
+
+    <string name="empty_BookingMessage">No Bookings Available!</string>
+    <string name="empty_RoprtMessage">No Reports Available!</string>
+    <string name="empty_NotificationMessage">No Notifications Available!</string>
+    <string name="empty_ActivityMessage">No Activities Available!</string>
+
+</resources>

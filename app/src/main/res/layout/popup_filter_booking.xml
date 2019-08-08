@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_weight="9"
+            android:gravity="center"
+            android:text="Filters"
+            android:textAppearance="@style/TextAppearance"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_text_size1"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_close_black"
+            android:tint="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="Booking No."
+            android:textColor="@color/black"
+            android:textSize="@dimen/med_text_size"
+            android:textStyle="normal"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/edtBookingID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingTop="10dp"
+            android:textAppearance="@style/TextAppearance"
+            android:textColor="@color/dark_gray"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/med_text_size"
+            android:textStyle="normal"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/edt_botton_line"
+            android:visibility="gone" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/edtTravellerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:hint="Traveller Name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:paddingTop="10dp"
+                android:textAppearance="@style/TextAppearance"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/med_text_size"
+                android:textStyle="normal" />
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/edt_botton_line"
+            android:visibility="gone" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/edtCategoryName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:clickable="true"
+                android:drawableRight="@mipmap/ic_down_arrow"
+                android:focusableInTouchMode="false"
+                android:hint="Category Name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:longClickable="false"
+                android:paddingTop="10dp"
+                android:textAppearance="@style/TextAppearance"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/med_text_size"
+                android:textStyle="normal" />
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/edt_botton_line"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/spCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:visibility="gone" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/edtActivityName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:hint="Activity Name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:paddingTop="10dp"
+                android:textAppearance="@style/TextAppearance"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/med_text_size"
+                android:textStyle="normal" />
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/edt_botton_line"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textAppearance="@style/TextAppearance"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_size"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edtFromDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="date"
+                    android:longClickable="false"
+                    android:textAppearance="@style/TextAppearance"
+                    android:textColor="@color/dark_gray"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/small_text_size"
+                    android:textStyle="normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/edt_botton_line" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="bottom|center"
+                android:text="To"
+                android:textAppearance="@style/TextAppearance"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x_small_text_size"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edtToDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="date"
+                    android:longClickable="false"
+                    android:textAppearance="@style/TextAppearance"
+                    android:textColor="@color/dark_gray"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/small_text_size"
+                    android:textStyle="normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/edt_botton_line" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Booking status"
+            android:textAppearance="@style/TextAppearance"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_size"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:clickable="true"
+                android:drawableRight="@mipmap/ic_down_arrow"
+                android:focusableInTouchMode="false"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:longClickable="false"
+                android:textAppearance="@style/TextAppearance"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/small_text_size"
+                android:textStyle="normal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/edt_botton_line" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Redeem status"
+            android:textAppearance="@style/TextAppearance"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_size"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtRedeemStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:clickable="true"
+                android:drawableRight="@mipmap/ic_down_arrow"
+                android:focusableInTouchMode="false"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:longClickable="false"
+                android:textAppearance="@style/TextAppearance"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/small_text_size"
+                android:textStyle="normal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/edt_botton_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="20dp">
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/button_bg"
+                android:singleLine="true"
+                android:text="Clear"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_text_size1"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/btnDone"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/button_bg"
+                android:singleLine="true"
+                android:text="Done"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_text_size1"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

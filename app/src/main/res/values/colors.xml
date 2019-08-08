@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3da769</color>
+    <color name="colorPrimary1">#6ed699</color>
+    <color name="colorPrimaryDark">#09160e</color>
+    <color name="colorPrimaryLight">#4a4b4a</color>
+    <color name="colorAccent">#6ed699</color>
+    <color name="app_theme_dark">#3da769</color>
+
+    <color name="white">#ffffff</color>
+    <color name="off_white">#fafafa</color>
+
+    <color name="noti_bg">#f6f6f6</color>
+    <color name="bg_white">#F2F4F5</color>
+    <color name="light_gray">#b3b3b3</color>
+    <color name="dark_gray">#898d8a</color>
+    <color name="filter_gray">#8C8C8C</color>
+    <color name="black">#000000</color>
+    <color name="edt_botton_line">#282828</color>
+
+
+    <color name="yellow">#FCC91B</color>
+    <color name="pending">#f8ac59</color>
+
+    <color name="cancel">#ed5565</color>
+    <color name="red">#C0392B</color>
+    <color name="expired">#999999</color>
+    <color name="refund">#d4ac83</color>
+    <color name="redeem">#741fc1</color>
+    <color name="awaiting">#a5636a</color>
+
+    <color name="published">#4a6e86</color>
+    <color name="draft">#23c6c8</color>
+    <color name="confirm">#1ab394</color>
+
+</resources>

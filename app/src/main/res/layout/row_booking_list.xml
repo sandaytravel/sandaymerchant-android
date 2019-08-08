@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/noti_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Booking date "
+                        android:textAppearance="@style/TextAppearance"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/title_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvBookingDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1/2/2019"
+                        android:textAppearance="@style/TextAppearance"
+                        android:textColor="@color/colorPrimaryLight"
+                        android:textSize="@dimen/x_small_text_size"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="right">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Participation date "
+                        android:textAppearance="@style/TextAppearance"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/title_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvParticipationDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1/2/2019"
+                        android:textAppearance="@style/TextAppearance"
+                        android:textColor="@color/colorPrimaryLight"
+                        android:textSize="@dimen/x_small_text_size"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Booking Ref Id "
+                    android:textAppearance="@style/TextAppearance"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/title_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvOrderNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:text="546132051"
+                    android:textAppearance="@style/TextAppearance"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text_size"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Category: "
+                    android:textAppearance="@style/TextAppearance"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvCategoryName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Attrections and Shows"
+                    android:textAppearance="@style/TextAppearance"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textSize="@dimen/small_text_size"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Traveller Name: "
+                    android:textAppearance="@style/TextAppearance"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvCustomerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:text="Apurv Modi"
+                    android:textAppearance="@style/TextAppearance"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textSize="@dimen/small_text_size"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivActivity"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/splash_bg"
+                    android:visibility="gone" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone">
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_view"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        card_view:cardBackgroundColor="@android:color/transparent"
+                        card_view:cardCornerRadius="10dp">
+
+                        <!-- <com.joooonho.SelectableRoundedImageView
+                             android:id="@+id/ivActivity"
+                             android:layout_width="60dp"
+                             android:layout_height="60dp"
+                             android:scaleType="fitXY"
+                             app:sriv_left_bottom_corner_radius="10dp"
+                             app:sriv_left_top_corner_radius="10dp"
+                             app:sriv_right_bottom_corner_radius="10dp"
+                             app:sriv_right_top_corner_radius="10dp" />
+     -->
+                    </android.support.v7.widget.CardView>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvActivityName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6.5"
+                        android:singleLine="true"
+                        android:text="East Nusa Penida Whole Day Trip"
+                        android:textAppearance="@style/TextAppearance"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/title_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvTotalPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="RM 15200"
+                        android:textAppearance="@style/TextAppearance"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="start"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 adults"
+                        android:textAppearance="@style/TextAppearance"
+                        android:textColor="@color/colorPrimaryLight"
+                        android:textSize="@dimen/title_text_size"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="5"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgRedeem"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/gift"
+                        android:visibility="gone" />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cdStatus"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:elevation="0dp"
+                        card_view:cardCornerRadius="12dp"
+                        card_view:cardElevation="0dp">
+
+                        <TextView
+                            android:id="@+id/tvStatus"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Confirmed"
+                            android:textAppearance="@style/TextAppearance"
+                            android:textColor="@color/white"
+                            android:textSize="11sp"
+                            android:textStyle="normal" />
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llNRedeem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#77ffffff"
+            android:gravity="bottom|end"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="3dp">
+                <android.support.v7.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:elevation="0dp"
+                    app:cardBackgroundColor="@color/confirm"
+                    card_view:cardCornerRadius="12dp"
+                    card_view:cardElevation="0dp">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Confirmed"
+                        android:textAppearance="@style/TextAppearance"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        android:textStyle="normal" />
+
+                </android.support.v7.widget.CardView>
+
+                <com.mohan.ribbonview.RibbonView
+                    android:id="@+id/ribbon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="4dp"
+                    android:text="Redeemed"
+                    android:textAppearance="@style/TextAppearance"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_text_size"
+                    android:textStyle="normal"
+                    app:ribbonFillColor="@color/app_theme_dark"
+                    app:ribbonGravity="right"
+                    app:ribbonStrokeColor="@android:color/transparent"
+                    app:ribbonStrokeWidth="1dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

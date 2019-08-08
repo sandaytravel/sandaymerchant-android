@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.san.app.merchant.activity.DashboardActivity">
+
+    <LinearLayout
+        android:id="@+id/lvMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/off_white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/llBottombar"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/white"
+                    android:elevation="50dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="6dp">
+
+                    <FrameLayout
+                        android:id="@+id/llSales"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <View
+                            android:id="@+id/viewSales"
+                            android:layout_width="20dp"
+                            android:layout_height="1.5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <com.varunest.sparkbutton.SparkButton
+                            android:id="@+id/sbSales"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            app:sparkbutton_activeImage="@mipmap/sales_active"
+                            app:sparkbutton_animationSpeed="0.5"
+                            app:sparkbutton_iconSize="25dp"
+                            app:sparkbutton_inActiveImage="@mipmap/sales_active"
+                            app:sparkbutton_primaryColor="@color/white"
+                            app:sparkbutton_secondaryColor="@color/white" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/llCalender"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <View
+                            android:id="@+id/viewCalender"
+                            android:layout_width="20dp"
+                            android:layout_height="1.5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/colorPrimaryDark"
+                            android:visibility="gone" />
+
+                        <com.varunest.sparkbutton.SparkButton
+                            android:id="@+id/sbCalender"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            app:sparkbutton_activeImage="@mipmap/my_activity"
+                            app:sparkbutton_animationSpeed="0.5"
+                            app:sparkbutton_iconSize="25dp"
+                            app:sparkbutton_inActiveImage="@mipmap/my_activity"
+                            app:sparkbutton_primaryColor="@color/white"
+                            app:sparkbutton_secondaryColor="@color/white" />
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:id="@+id/llBooking"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/ivBooking"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/booking" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/llNotification"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <View
+                            android:id="@+id/viewNotification"
+                            android:layout_width="20dp"
+                            android:layout_height="1.5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/colorPrimaryDark"
+                            android:visibility="gone" />
+
+                        <com.varunest.sparkbutton.SparkButton
+                            android:id="@+id/sbNotification"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            app:sparkbutton_activeImage="@mipmap/notification_active"
+                            app:sparkbutton_animationSpeed="0.5"
+                            app:sparkbutton_iconSize="25dp"
+                            app:sparkbutton_inActiveImage="@mipmap/notification_active"
+                            app:sparkbutton_primaryColor="@color/white"
+                            app:sparkbutton_secondaryColor="@color/white" />
+                        <TextView
+                            android:id="@+id/tv_noti_badge"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="11dp"
+                            android:layout_marginLeft="11dp"
+                            android:background="@drawable/bground_badge"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="10dp"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/llSettings"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <View
+                            android:id="@+id/viewSettings"
+                            android:layout_width="20dp"
+                            android:layout_height="1.5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/colorPrimaryDark"
+                            android:visibility="gone" />
+
+                        <com.varunest.sparkbutton.SparkButton
+                            android:id="@+id/sbSettings"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            app:sparkbutton_activeImage="@mipmap/setting_active"
+                            app:sparkbutton_animationSpeed="0.5"
+                            app:sparkbutton_iconSize="25dp"
+                            app:sparkbutton_inActiveImage="@mipmap/setting_active"
+                            app:sparkbutton_primaryColor="@color/white"
+                            app:sparkbutton_secondaryColor="@color/white" />
+                    </FrameLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</layout>
